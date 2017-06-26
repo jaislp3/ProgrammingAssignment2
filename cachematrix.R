@@ -10,12 +10,9 @@ x <<- y
 mi <<- NULL
 }
 get <- function() x
-setinverse <- function(solve) mi <<- solve
+setinverse <- function(inverse) mi <<- inverse
 getinverse <- function() mi
-list(set = set, get = get,
-setinverse = setinverse,
-getinverse = getinverse)
-
+list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
 }
 
 
